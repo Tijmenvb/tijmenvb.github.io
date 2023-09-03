@@ -36,16 +36,23 @@
             cursor: pointer;
             background-color: transparent; /* Make the button background transparent */
             border: none;
-            display: block;
+            display: flex; /* To align the image and text side by side */
+            align-items: center; /* Vertically align the image and text */
             margin: 0 auto;
         }
 
         button img {
-            width: 60px; /* Adjust the size of the discord logo as needed */
+            width: 100px; /* Increased size of the discord logo */
+            margin-right: 10px; /* Space between the image and text */
         }
 
         button:hover img {
             opacity: 0.8; /* Add a slight hover effect */
+        }
+
+        button span {
+            color: white;
+            font-size: 24px; /* Adjust font size as needed */
         }
 
         main {
@@ -60,7 +67,10 @@
 <body>
     <div id="sidebar">
         <a href="https://discord.gg/XWqFyaZMXy">
-            <button><img src="discordlogo.png" alt="Discord"></button>
+            <button>
+                <img src="discordlogo.png" alt="Discord">
+                <span>Discord</span>
+            </button>
         </a>
     </div>
     <main>
