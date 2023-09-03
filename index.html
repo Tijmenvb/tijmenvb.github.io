@@ -20,10 +20,9 @@
             background-color: black;
             width: 30%; /* or adjust as needed */
             height: 100vh;
-            padding: 20px;
+            padding: 0; /* Removed padding to make the button fill the width */
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
 
         img.logo {
@@ -38,11 +37,13 @@
             border: none;
             display: flex; /* To align the image and text side by side */
             align-items: center; /* Vertically align the image and text */
-            margin: 0 auto;
+            width: 100%; /* Make the button fill the width */
+            justify-content: center; /* Center the content horizontally */
+            background-color: blue; /* Set the background color to blue */
         }
 
         button img {
-            width: 100px; /* Increased size of the discord logo */
+            width: 100px; /* Size of the discord logo */
             margin-right: 10px; /* Space between the image and text */
         }
 
@@ -72,6 +73,7 @@
                 <span>Discord</span>
             </button>
         </a>
+        <!-- Additional space for more sidebar content, if desired -->
     </div>
     <main>
         <img src="6ed07e2f7325d3993aedd35ee9f2dbb9b90e5480.png" alt="Uploaded Image" class="logo">
