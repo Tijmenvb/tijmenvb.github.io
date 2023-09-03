@@ -29,7 +29,6 @@
         img {
             width: 100%;
             max-height: 50vh;
-            flex-grow: 1;
         }
 
         button {
@@ -52,18 +51,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Added to stack items vertically */
         }
     </style>
 </head>
 <body>
     <div id="sidebar">
-        <img src="6ed07e2f7325d3993aedd35ee9f2dbb9b90e5480.png" alt="Uploaded Image">
         <a href="https://discord.gg/XWqFyaZMXy">
             <button>Discord</button>
         </a>
     </div>
     <main>
-        <!-- You can add content for the main area here -->
+        <img src="6ed07e2f7325d3993aedd35ee9f2dbb9b90e5480.png" alt="Uploaded Image">
+        <!-- You can add more content for the main area below the logo here -->
     </main>
 </body>
 </html>
