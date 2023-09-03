@@ -19,12 +19,12 @@
 
         #sidebar {
             background-color: black;
-            width: 30%; /* or adjust as needed */
+            width: 20%; /* reduced to 2/3 of the original */
             height: 100vh;
-            padding: 0; /* Removed padding to make the button fill the width */
+            padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Vertically center the button in the sidebar */
+            align-items: center; /* horizontally center the button */
         }
 
         img.logo {
@@ -33,33 +33,34 @@
         }
 
         a {
-            text-decoration: none; /* Remove the underline from the link */
+            text-decoration: none;
+            width: 66.67%; /* reduced to 2/3 of the original */
         }
 
         button {
             padding: 0;
             cursor: pointer;
-            background-color: #4f7fe1; /* Updated background color */
+            background-color: #4f7fe1;
             border: none;
-            display: flex; /* To align the image and text side by side */
-            align-items: center; /* Vertically align the image and text */
-            width: 100%; /* Make the button fill the width */
-            justify-content: center; /* Center the content horizontally */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
         }
 
         button img {
-            width: 100px; /* Size of the discord logo */
-            margin-right: 10px; /* Space between the image and text */
+            width: 66.67px;
+            margin-right: 10px;
         }
 
         button:hover img {
-            opacity: 0.8; /* Add a slight hover effect */
+            opacity: 0.8;
         }
 
         button span {
             color: white;
-            font-size: 24px; /* Adjust font size as needed */
-            font-family: 'Teko', sans-serif; /* Use the "Teko" font */
+            font-size: 24px;
+            font-family: 'Teko', sans-serif;
         }
 
         main {
@@ -67,7 +68,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Added to stack items vertically */
+            flex-direction: column;
         }
     </style>
 </head>
